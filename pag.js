@@ -12,6 +12,6 @@ http.createServer(function(req, res) {
         documentr.insertAdjacentHTML('beforeend', 'data');
         console.log(data);
         res.end(html);
-      })
+      });
     }
 }).listen(3000);
