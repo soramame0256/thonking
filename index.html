@@ -6,6 +6,14 @@
         <button id="btn">output</button>
         <textarea rows=1 cols=255 id=inpt></textarea>
         <div id="output"></div>
-        <script type="text/javascript" src="pag.js"></script>
+        <script type="text/javascript">
+function a(){
+    let a = document.getElementById("inpt");
+    let b = document.getElementById("output");
+    b.insertAdjacentHTML("beforeend", a.value);
+}
+var btn = document.getElementById("btn");
+btn.addEventListener("click", a);
+        </script>
     </body>
 </html>
