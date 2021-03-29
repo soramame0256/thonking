@@ -8,10 +8,10 @@ http.createServer(function(req, res) {
     var data = '';
     req.on('data', function(chunk) {data += chunk})
       .on('end', function() {
-        document.getElementById('data').insertAdjacentHTML('beforeend', 'data')
+        var documentr = document.getElementById('data');
+        documentr.insertAdjacentHTML('beforeend', 'data');
         console.log(data);
         res.end(html);
       })
     }
-  }
 }).listen(3000);
